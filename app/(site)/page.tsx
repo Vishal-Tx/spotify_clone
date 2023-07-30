@@ -1,7 +1,11 @@
-import React from "react";
+import Header from "@/components/Header";
 
 const page = () => {
-  return <div className="text-red-700">Main Content</div>;
+  return (
+    <div className="bg-neutral-900 rounded-lg h-full w-full overflow-hidden overflow-y-auto">
+      <Header>He</Header>
+    </div>
+  );
 };
 
 export default page;
