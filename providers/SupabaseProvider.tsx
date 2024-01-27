@@ -10,12 +10,12 @@ interface SupabaseProviderProps {
 }
 
 const Supabaseprovider = ({ children }: SupabaseProviderProps) => {
-  const [supabaseCLient] = useState(() =>
+  const [supabaseClient] = useState(() =>
     createClientComponentClient<Database>()
   );
 
   return (
-    <SessionContextProvider supabaseClient={supabaseCLient}>
+    <SessionContextProvider supabaseClient={supabaseClient}>
       {children}
     </SessionContextProvider>
   );
